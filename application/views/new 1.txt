@@ -1,0 +1,159 @@
+
+<?php
+	$this->load->view('header'); 
+	$this->load->helper('url');
+	$base = base_url() . index_page();
+	$img_base = base_url()."assets/images/";
+?>
+	 
+	 <div id="contact-page" class="container">
+    	<div class="bg">
+	    	<div class="row">    		
+	    		<div class="col-sm-12">    			   			
+					<h2 class="title text-center">Customer <strong>Registration</strong></h2>    			    				    				
+					
+				</div>			 		
+			</div>   
+
+				
+    		<div class="col-sm-8">
+	    			<div class="contact-form">
+	    				<h2 class="title text-center">SIGN UP</h2>
+	    				<div class="status alert alert-success" style="display: none"></div>
+						
+						<?php echo form_open_multipart('MiniThingsController/handle_customer_registration');
+				    	echo <form action="" class="contact-form row" name="" method="">;				             
+						echo<div class="form-group col-md-12">
+				                form_input('CustomerNumber', $CustomerNumber);
+				            </div>;
+								
+							echo<div class="form-group col-md-6">
+				                form_input('CusttomerName', $CusttomerName);
+				            </div>;
+								
+				            echo<div class="form-group col-md-6">
+				                form_input('ContactLastName', $ContactLastName);
+				            </div>;
+							
+				            echo<div class="form-group col-md-12">
+				                 form_input('ContactFirstName', $ContactFirstName);
+				            </div>;
+							
+							echo<div class="form-group col-md-12">
+				                form_input('Phone', $Phone);
+				            </div>; 
+
+							echo<div class="form-group col-md-12">
+				                form_input('AddressLine1', $AddressLine1);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('AddressLine2', $AddressLine2);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('City', $City);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('State', $State);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('PostalCode', $PostalCode);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('Country', $Country);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('CreditLimit', $CreditLimit);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('Email', $Email);
+				            </div>; 
+							
+							echo<div class="form-group col-md-12">
+				                form_input('Password', $Password);
+				            </div>; 
+													
+							echo form_submit('submitRegistration', "Sign up");
+
+							echo form_close();
+							echo validation_errors();
+							
+							echo 'Already have an account ? <a href="">Login</a>';
+				        echo    </div>
+				        echo </form>
+						
+						?>
+	    			</div>
+	    		</div>
+				
+				
+	    		<div class="col-sm-4">
+	    			<div class="contact-info">
+	    				<h2 class="title text-center">Contact Info</h2>
+	    				<address>
+	    					<p>Mini</p>
+							<p>Moylish Park. Co. Limerick.</p>
+							<p>TEL:(061) 000 000 </p>
+							<p>Mobile:(089) 000 000 </p>
+							<p>Fax:(061) 000 001</p>
+							<p>Email: k00203438@student.lit.ie</p>
+	    				</address>
+						
+						<div>
+						<h2 class="title text-center">We are here</h2>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2419.1747168329703!2d-8.649743184464722!3d52.6748826798438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5cf73465e15d%3A0xb24aac384d416b8c!2sLimerick+Institute+of+Technology!5e0!3m2!1sen!2sie!4v1492773378756" width="330" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						
+	    				<div class="social-networks">
+	    					<h2 class="title text-center">Social Networking</h2>
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/TMS-Online-Shop-121109778436650" target="_blank"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCMreoo5Ry7WoUw1ikBotguA" target="_blank"><i class="fa fa-youtube"></i></a>
+								</li>
+							</ul>	    				
+					  </div>
+					  
+	    			</div>
+    			</div>    			
+	    	</div>  
+    	</div>	
+    </div><!--/#contact-page-->
+	
+	<!-- Form css -->
+	<style>
+		form {
+		border: 3px solid #f1f1f1;
+		align: "center";
+		
+		-webkit-box-shadow: 0px 0px 15px;
+		box-shadow: 0px 0px 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		.containerForm {
+		padding: 16px;
+	}
+		.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+	}
+	</style>
+	
+<?php
+	$this->load->view('footer'); 
+?>
